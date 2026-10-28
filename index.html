@@ -26,15 +26,18 @@
   <meta property="og:title" content="Táxi Náutico Luiza e Analy | Travessias e Passeios na Ilha do Mel">
   <meta property="og:description" content="Travessias sob demanda entre Pontal do Sul, Paranaguá, Nova Brasília e Encantadas + passeios de barco pela Ilha do Mel.">
   <meta property="og:url" content="https://taxi-nautico-luiza-analy.vercel.app/">
-  <meta property="og:image" content="https://taxi-nautico-luiza-analy.vercel.app/img/og-luiza-analy.jpg">
+  <meta property="og:image" content="https://taxi-nautico-luiza-analy.vercel.app/img/og-taxi-nautico-travessia.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="Táxi Náutico Luiza e Analy: travessias e passeios na Ilha do Mel, rota Pontal do Sul, Nova Brasília e Encantadas">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Táxi Náutico Luiza e Analy | Ilha do Mel &amp; Paranaguá">
   <meta name="twitter:description" content="Saídas imediatas de lancha e passeios de barco na Ilha do Mel sem fila.">
-  <meta name="twitter:image" content="https://taxi-nautico-luiza-analy.vercel.app/img/og-luiza-analy.jpg">
+  <meta name="twitter:image" content="https://taxi-nautico-luiza-analy.vercel.app/img/og-taxi-nautico-travessia.jpg">
+  <meta name="twitter:image:alt" content="Táxi Náutico Luiza e Analy: travessias e passeios na Ilha do Mel">
 
   <!-- Preload Hero 4K -->
   <link rel="preload" as="image" href="img/hero-taxi-nautico-4k.webp" type="image/webp" fetchpriority="high">
@@ -42,7 +45,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Schema.org JSON-LD (@graph SEO Local + GEO) -->
   <script type="application/ld+json">
@@ -58,7 +61,7 @@
         "url": "https://taxi-nautico-luiza-analy.vercel.app/",
         "telephone": "+55-41-99762-1767",
         "image": [
-          "https://taxi-nautico-luiza-analy.vercel.app/img/og-luiza-analy.jpg",
+          "https://taxi-nautico-luiza-analy.vercel.app/img/og-taxi-nautico-travessia.jpg",
           "https://taxi-nautico-luiza-analy.vercel.app/img/hero-taxi-nautico-4k.jpg",
           "https://taxi-nautico-luiza-analy.vercel.app/img/trapiche-nova-brasilia.jpg",
           "https://taxi-nautico-luiza-analy.vercel.app/img/farol-das-conchas-luiza.jpg"
@@ -167,10 +170,12 @@
       --sun: #D95338;
       --sun-soft: #F39B88;
       --wa: #1FA855;
+      --sea: #1E8FA3;
+      --foam: #DDEFEF;
       --ease: cubic-bezier(0.22, 1, 0.36, 1);
-      --display: 'Space Grotesk', system-ui, sans-serif;
-      --serif: 'Newsreader', Georgia, serif;
-      --sans: 'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, sans-serif;
+      --display: 'Archivo', system-ui, sans-serif;
+      --serif: 'Archivo', system-ui, sans-serif;
+      --sans: 'Manrope', -apple-system, 'Segoe UI', Roboto, sans-serif;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { background: var(--sand); color: var(--ink); font-family: var(--sans); -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; overflow-x: hidden; }
@@ -180,8 +185,8 @@
     button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; touch-action: manipulation; }
     a, summary { touch-action: manipulation; }
     ul { list-style: none; }
-    h1, h2, h3 { font-family: var(--display); font-weight: 700; letter-spacing: -0.03em; line-height: 1.03; }
-    .serif { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: -0.01em; }
+    h1, h2, h3 { font-family: var(--display); font-weight: 800; font-stretch: 104%; letter-spacing: -0.025em; line-height: 1.05; }
+    .serif { font-family: var(--serif); font-style: italic; font-weight: 500; font-stretch: 100%; letter-spacing: -0.015em; }
     .wrap { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 16px; }
     section[id] { scroll-margin-top: 80px; }
     :focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; }
@@ -232,12 +237,12 @@
     .hero-media picture, .hero-media img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; }
     .hero-media img { animation: kenburns 2.6s var(--ease) both; will-change: transform; }
     @keyframes kenburns { from { transform: scale(1.12); } to { transform: scale(1.02); } }
-    .hero-scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(19, 34, 56, 0.35) 0%, rgba(19, 34, 56, 0) 24%, rgba(19, 34, 56, 0.12) 46%, rgba(19, 34, 56, 0.92) 100%); }
+    .hero-scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(19, 34, 56, 0.35) 0%, rgba(19, 34, 56, 0) 22%, rgba(19, 34, 56, 0.34) 42%, rgba(19, 34, 56, 0.74) 66%, rgba(19, 34, 56, 0.94) 100%); }
     .hero-body { position: relative; width: 100%; padding-top: 120px; padding-bottom: 48px; }
     .rating { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; background: rgba(19, 34, 56, 0.72); border: 1px solid rgba(253, 252, 249, 0.24); font-size: 0.84rem; font-weight: 600; margin-bottom: 16px; }
     .rating b { color: var(--sun-soft); letter-spacing: 2px; font-weight: 400; }
-    .hero h1 { font-size: clamp(2.35rem, 10.2vw, 4.6rem); max-width: 12ch; margin-bottom: 14px; text-shadow: 0 4px 28px rgba(0, 0, 0, 0.6), 0 1px 6px rgba(0, 0, 0, 0.45); }
-    .hero h1 .serif { color: var(--sun-soft); font-size: 1.08em; }
+    .hero h1 { font-size: clamp(2.05rem, 9vw, 4.2rem); max-width: 12ch; margin-bottom: 14px; text-shadow: 0 4px 28px rgba(0, 0, 0, 0.6), 0 1px 6px rgba(0, 0, 0, 0.45); }
+    .hero h1 .serif { color: var(--sun-soft); }
     .hero-lead { font-size: 1.04rem; color: rgba(253, 252, 249, 0.95); max-width: 35ch; margin-bottom: 24px; text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5); }
     .hero-actions { display: flex; flex-direction: column; gap: 12px; }
     .w { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: 0.12em; margin-bottom: -0.12em; }
@@ -265,8 +270,8 @@
     .eyebrow { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 0.76rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); }
     .eyebrow::before { content: ''; width: 22px; height: 2px; border-radius: 2px; background: var(--sun); }
     .deep .eyebrow { color: rgba(253, 252, 249, 0.72); }
-    .sec-title { font-size: clamp(1.95rem, 7.8vw, 3.25rem); }
-    .sec-title .serif { color: var(--ink-2); font-size: 1.08em; }
+    .sec-title { font-size: clamp(1.7rem, 7vw, 3rem); }
+    .sec-title .serif { color: var(--sea); }
     .deep .sec-title .serif { color: var(--sun-soft); }
     .sec-sub { margin-top: 12px; color: var(--ink-soft); max-width: 44ch; }
     .deep .sec-sub { color: rgba(253, 252, 249, 0.78); }
@@ -278,23 +283,23 @@
     /* ---------- Painel de Travessias (Live Thing — exclusivo para Táxi Náutico) ---------- */
     .ferry-board { background: var(--ink); color: var(--shell); border-radius: 28px; padding: 22px 18px; display: grid; gap: 18px; margin-bottom: 42px; }
     .ferry-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-    .ferry-head strong { font-family: var(--display); font-size: 1.25rem; }
+    .ferry-head strong { font-family: var(--display); font-size: 1.1rem; font-stretch: 104%; }
     .ferry-badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: rgba(253, 252, 249, 0.1); font-size: 0.78rem; font-weight: 700; color: var(--sun-soft); }
-    .ferry-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: #34D399; }
+    .ferry-badge::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--sun); }
     .ferry-tabs { display: flex; flex-wrap: wrap; gap: 8px; }
     .f-tab { min-height: 44px; padding: 0 14px; border-radius: 999px; border: 1.5px solid rgba(253, 252, 249, 0.2); color: var(--shell); font-weight: 600; font-size: 0.86rem; transition: background 0.2s, border-color 0.2s; }
     .f-tab.active { background: var(--sun); border-color: var(--sun); color: var(--shell); }
     .ferry-info { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 16px; border-radius: 20px; background: rgba(253, 252, 249, 0.06); }
     .ferry-info div small { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(253, 252, 249, 0.65); }
-    .ferry-info div b { display: block; font-family: var(--display); font-size: 1.35rem; margin-top: 2px; color: var(--sun-soft); }
+    .ferry-info div b { display: block; font-family: var(--display); font-size: 1.15rem; margin-top: 2px; color: var(--sun-soft); }
     .ferry-info p { grid-column: 1 / -1; font-size: 0.92rem; color: rgba(253, 252, 249, 0.85); }
 
     /* ---------- Apresentação Luiza e Analy (abaixo da 1ª dobra) ---------- */
     .host { display: grid; gap: 22px; }
     .host .photo { aspect-ratio: 4 / 3.3; }
     .host-copy { display: grid; gap: 14px; align-content: center; }
-    .host-copy h2 { font-size: clamp(1.8rem, 6.6vw, 2.7rem); }
-    .host-copy h2 .serif { color: var(--ink-2); font-size: 1.08em; }
+    .host-copy h2 { font-size: clamp(1.6rem, 6.2vw, 2.5rem); }
+    .host-copy h2 .serif { color: var(--sea); }
     .host-copy p { color: var(--ink-soft); }
     .ticks { display: grid; gap: 8px; }
     .ticks li { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 0.95rem; }
@@ -308,7 +313,7 @@
     .tag { position: absolute; top: 12px; left: 12px; z-index: 2; padding: 6px 12px; border-radius: 999px; background: rgba(253, 252, 249, 0.94); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); }
     .tag.sun { background: var(--sun); color: var(--shell); }
     .card-body { padding: 18px 12px 12px; display: grid; gap: 10px; }
-    .card-body h3 { font-size: 1.4rem; }
+    .card-body h3 { font-size: 1.25rem; }
     .card-body p { color: var(--ink-soft); font-size: 0.95rem; }
     .card-body .btn-line { justify-self: start; margin-top: 4px; }
 
@@ -317,7 +322,7 @@
     .routes::-webkit-scrollbar { display: none; }
     .route { scroll-snap-align: center; display: grid; gap: 14px; }
     .route .photo { aspect-ratio: 4 / 3.8; border-radius: 26px; }
-    .route h3 { font-size: 1.28rem; }
+    .route h3 { font-size: 1.14rem; }
     .route p { color: var(--ink-soft); font-size: 0.93rem; margin-top: 4px; }
     .route small { display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sun); margin-bottom: 4px; }
     .routes-bar { height: 3px; border-radius: 3px; background: var(--line); margin-top: 18px; overflow: hidden; }
@@ -359,8 +364,8 @@
     /* ---------- Embarque + Dúvidas ---------- */
     .where { display: grid; gap: 14px; }
     .where-card { display: grid; gap: 16px; align-content: start; padding: 24px 20px; border-radius: 26px; background: var(--shell); border: 1px solid var(--line); }
-    .where-card h2 { font-size: 1.9rem; }
-    .where-card h2 .serif { color: var(--ink-2); }
+    .where-card h2 { font-size: 1.7rem; }
+    .where-card h2 .serif { color: var(--sea); }
     .facts { display: grid; gap: 12px; }
     .facts li { display: grid; gap: 2px; padding-left: 14px; border-left: 2px solid var(--sun); }
     .facts small { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); }
@@ -383,7 +388,7 @@
     .final::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(19, 34, 56, 0.55), rgba(19, 34, 56, 0.4) 45%, rgba(19, 34, 56, 0.9)); }
     .final .wrap { position: relative; z-index: 2; display: grid; justify-items: center; gap: 16px; }
     .final .eyebrow { color: rgba(253, 252, 249, 0.88); }
-    .final h2 { font-size: clamp(2.2rem, 9vw, 4.2rem); max-width: 13ch; text-shadow: 0 3px 26px rgba(0, 0, 0, 0.55); }
+    .final h2 { font-size: clamp(1.95rem, 8.2vw, 3.8rem); max-width: 14ch; text-shadow: 0 3px 26px rgba(0, 0, 0, 0.55); }
     .final h2 .serif { color: var(--sun-soft); }
     .footer { background: var(--ink); color: rgba(253, 252, 249, 0.72); padding: 40px 0 100px; font-size: 0.88rem; border-top: 1px solid rgba(253, 252, 249, 0.08); }
     .foot { display: grid; gap: 20px; }
@@ -399,6 +404,69 @@
     @keyframes ping { 0% { transform: scale(1); opacity: 0.45; } 80%, 100% { transform: scale(1.7); opacity: 0; } }
     .fab.away { opacity: 0; transform: scale(0.8); pointer-events: none; }
 
+
+    /* ---------- ondas animadas entre seções ---------- */
+    .onda { display: block; position: relative; height: 40px; overflow: hidden; margin-top: -1px; }
+    .onda svg { position: absolute; left: 0; bottom: 0; width: 200%; height: 100%; fill: currentColor; animation: ondaL 16s linear infinite; }
+    .onda svg + svg { animation-duration: 24s; animation-direction: reverse; }
+    @keyframes ondaL { to { transform: translateX(-50%); } }
+
+    /* ---------- palavras dos títulos (sobem da máscara ao entrar na tela) ---------- */
+    .js .split:not(h1) .wi { transform: translateY(112%); transition: transform 0.9s var(--ease); transition-delay: calc(var(--i, 0) * 55ms); }
+    .js .split.in .wi { transform: none; }
+    .js .rv { opacity: 0; filter: blur(6px); transform: translateY(16px); transition: opacity 0.8s var(--ease), filter 0.8s var(--ease), transform 0.8s var(--ease); transition-delay: calc(var(--d, 0) * 90ms); }
+    .js .rv.in { opacity: 1; filter: none; transform: none; }
+
+    /* ---------- faixa de destaques: arte ---------- */
+    .faixa { padding: 26px 0 44px; }
+    .arte { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .art-i { min-width: 0; display: grid; justify-items: center; gap: 2px; padding: 14px 8px 16px; text-align: center; border-radius: 24px; background: var(--shell); border: 1px solid var(--line); }
+    .art-i > svg { width: 100%; max-width: 150px; height: auto; overflow: visible; }
+    .art-i .n { margin-top: 4px; font-family: var(--display); font-weight: 800; font-stretch: 104%; font-size: 1.55rem; line-height: 1; }
+    .art-i .n em { font-style: normal; color: var(--sun); }
+    .art-i > span { font-size: 0.8rem; color: var(--ink-soft); }
+    .ln { fill: none; stroke: var(--ink); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+    .ln.s { stroke: var(--sun); }
+    .tracejado { fill: none; stroke: var(--sea); stroke-width: 2; stroke-linecap: round; stroke-dasharray: 1 6; }
+    .st { fill: #FBBC04; transform-box: fill-box; transform-origin: center; }
+    .js .st { opacity: 0.16; transform: scale(0.55); }
+    .js .in .st { animation: starIn 0.55s var(--ease) both; animation-delay: calc(var(--k) * 150ms + 150ms); }
+    @keyframes starIn { to { opacity: 1; transform: none; } }
+    .ponteiro { transform-box: view-box; transform-origin: 60px 24px; animation: giro 5s linear infinite; }
+    @keyframes giro { to { transform: rotate(360deg); } }
+    .barco { animation: trav 5s ease-in-out infinite; }
+    @keyframes trav { 0% { transform: translateX(0); opacity: 0; } 14% { opacity: 1; } 86% { opacity: 1; } 100% { transform: translateX(78px); opacity: 0; } }
+    .boia { transform-box: fill-box; transform-origin: center; animation: bob 3.2s ease-in-out infinite alternate; }
+    @keyframes bob { from { transform: translateY(2px) rotate(-5deg); } to { transform: translateY(-3px) rotate(5deg); } }
+    .mar-faixa { animation: marL 3s linear infinite; }
+    @keyframes marL { to { transform: translateX(-40px); } }
+    .selo-aro { transform-box: fill-box; transform-origin: center; animation: giro 26s linear infinite; }
+    .js .carimbo { opacity: 0; transform: scale(1.7) rotate(-16deg); transform-box: fill-box; transform-origin: center; }
+    .js .in .carimbo { animation: carimbo 0.65s var(--ease) 0.25s both; }
+    @keyframes carimbo { to { opacity: 1; transform: rotate(-6deg); } }
+
+    /* ---------- carta da travessia (rota animada) ---------- */
+    .carta { border-radius: 20px; overflow: hidden; background: #10294A; }
+    .carta svg { display: block; width: 100%; height: auto; }
+    .carta .lb { font: 700 13px var(--sans); fill: #fff; }
+    .carta .lb.d { fill: var(--ink); }
+    .carta .lb.i { font-style: italic; font-weight: 600; fill: var(--ink-soft); }
+    .carta .terra { fill: var(--sand); }
+    .carta .ilha { fill: var(--sand); stroke: rgba(255, 255, 255, 0.5); stroke-width: 3; }
+    .carta .fantasma { fill: none; stroke: rgba(255, 255, 255, 0.2); stroke-width: 2; stroke-dasharray: 2 5; stroke-linecap: round; }
+    .carta .rota { fill: none; stroke: var(--sun); stroke-width: 3.5; stroke-linecap: round; }
+    .carta .no { fill: #fff; stroke: var(--sun); stroke-width: 3.5; }
+    .carta .ondas { fill: none; stroke: rgba(255, 255, 255, 0.12); stroke-width: 1.6; stroke-linecap: round; }
+    .carta .nota { padding: 0 14px 10px; font-size: 0.72rem; color: rgba(253, 252, 249, 0.55); text-align: right; }
+
+    /* ---------- selo Google ---------- */
+    .selo { display: grid; gap: 18px; justify-items: start; padding: 22px; border-radius: 26px; background: var(--shell); border: 1px solid var(--line); }
+    .selo-top { display: flex; align-items: center; gap: 16px; }
+    .selo-top svg { width: 44px; height: 44px; flex: none; }
+    .selo strong { font-family: var(--display); font-weight: 800; font-size: 3rem; line-height: 1; }
+    .selo b { display: block; color: #FBBC04; letter-spacing: 2px; font-weight: 400; }
+    .selo small { color: var(--ink-soft); font-size: 0.86rem; }
+
     /* ---------- Desktop ---------- */
     @media (min-width: 760px) {
       .wrap { padding: 0 32px; }
@@ -407,9 +475,9 @@
       .hero-actions { flex-direction: row; align-items: center; }
       .hero-body { padding-bottom: 84px; }
       .hero-media img { object-position: 50% 50%; }
-      .stats-grid { grid-template-columns: repeat(4, 1fr); gap: 14px; }
-      .stat { padding: 24px 22px; }
-      .stat b { font-size: 2.4rem; }
+      .arte { grid-template-columns: repeat(4, 1fr); gap: 14px; }
+      .art-i .n { font-size: 1.9rem; }
+      .selo { grid-template-columns: auto 1fr; align-items: center; gap: 28px; }
       .ferry-board { padding: 32px; }
       .ferry-info { grid-template-columns: 1fr 1fr 2fr; align-items: center; }
       .ferry-info p { grid-column: auto; }
@@ -437,10 +505,17 @@
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation-duration: 0.01ms !important; animation-delay: 0ms !important; transition-duration: 0.01ms !important; }
       .intro { display: none; }
+      .onda svg, .ponteiro, .barco, .boia, .mar-faixa, .selo-aro { animation: none !important; }
+      .barco { opacity: 1; transform: translateX(39px); }
+      .js .split:not(h1) .wi { transform: none; transition: none; }
+      .js .rv { opacity: 1; filter: none; transform: none; transition: none; }
+      .js .st { opacity: 1; transform: none; }
+      .js .carimbo { opacity: 1; transform: rotate(-6deg); }
     }
   </style>
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><path id="wb" d="M0,34.0 L30,34.9 L60,34.9 L90,34.0 L120,32.4 L150,30.1 L180,27.4 L210,24.6 L240,21.9 L270,19.6 L300,18.0 L330,17.1 L360,17.1 L390,18.0 L420,19.6 L450,21.9 L480,24.6 L510,27.4 L540,30.1 L570,32.4 L600,34.0 L630,34.9 L660,34.9 L690,34.0 L720,32.4 L750,30.1 L780,27.4 L810,24.6 L840,21.9 L870,19.6 L900,18.0 L930,17.1 L960,17.1 L990,18.0 L1020,19.6 L1050,21.9 L1080,24.6 L1110,27.4 L1140,30.1 L1170,32.4 L1200,34.0 L1230,34.9 L1260,34.9 L1290,34.0 L1320,32.4 L1350,30.1 L1380,27.4 L1410,24.6 L1440,21.9 L1470,19.6 L1500,18.0 L1530,17.1 L1560,17.1 L1590,18.0 L1620,19.6 L1650,21.9 L1680,24.6 L1710,27.4 L1740,30.1 L1770,32.4 L1800,34.0 L1830,34.9 L1860,34.9 L1890,34.0 L1920,32.4 L1950,30.1 L1980,27.4 L2010,24.6 L2040,21.9 L2070,19.6 L2100,18.0 L2130,17.1 L2160,17.1 L2190,18.0 L2220,19.6 L2250,21.9 L2280,24.6 L2310,27.4 L2340,30.1 L2370,32.4 L2400,34.0 L2400,60 L0,60Z"/><path id="wf" d="M0,32.0 L30,34.2 L60,36.1 L90,37.7 L120,38.7 L150,39.0 L180,38.7 L210,37.7 L240,36.1 L270,34.2 L300,32.0 L330,29.8 L360,27.9 L390,26.3 L420,25.3 L450,25.0 L480,25.3 L510,26.3 L540,27.9 L570,29.8 L600,32.0 L630,34.2 L660,36.1 L690,37.7 L720,38.7 L750,39.0 L780,38.7 L810,37.7 L840,36.1 L870,34.2 L900,32.0 L930,29.8 L960,27.9 L990,26.3 L1020,25.3 L1050,25.0 L1080,25.3 L1110,26.3 L1140,27.9 L1170,29.8 L1200,32.0 L1230,34.2 L1260,36.1 L1290,37.7 L1320,38.7 L1350,39.0 L1380,38.7 L1410,37.7 L1440,36.1 L1470,34.2 L1500,32.0 L1530,29.8 L1560,27.9 L1590,26.3 L1620,25.3 L1650,25.0 L1680,25.3 L1710,26.3 L1740,27.9 L1770,29.8 L1800,32.0 L1830,34.2 L1860,36.1 L1890,37.7 L1920,38.7 L1950,39.0 L1980,38.7 L2010,37.7 L2040,36.1 L2070,34.2 L2100,32.0 L2130,29.8 L2160,27.9 L2190,26.3 L2220,25.3 L2250,25.0 L2280,25.3 L2310,26.3 L2340,27.9 L2370,29.8 L2400,32.0 L2400,60 L0,60Z"/></defs></svg>
 
   <div class="intro" aria-hidden="true">
     <div class="intro-in">
@@ -485,34 +560,28 @@
       </div>
     </section>
 
-    <div class="wrap">
-      <svg class="wave" viewBox="0 0 1200 34" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0 17c50 0 50-12 100-12s50 24 100 24 50-24 100-24 50 24 100 24 50-24 100-24 50 24 100 24 50-24 100-24 50 24 100 24 50-24 100-24 50 24 100 24 50-24 100-24 50 12 100 12"/></svg>
-      <div class="stats-grid">
-        <div class="stat"><b>4,9 <em>★</em></b><span>Avaliação no Google</span></div>
-        <div class="stat"><b>12 min</b><span>Travessia rápida</span></div>
-        <div class="stat"><b>Zero fila</b><span>Saída no seu horário</span></div>
-        <div class="stat"><b>100%</b><span>Credenciado Marinha</span></div>
-      </div>
-    </div>
+    <div class="onda" style="background:var(--ink);color:var(--sand)" aria-hidden="true"><svg viewBox="0 0 2400 60" preserveAspectRatio="none" opacity=".45"><use href="#wb"/></svg><svg viewBox="0 0 2400 60" preserveAspectRatio="none"><use href="#wf"/></svg></div>
+    <section class="faixa"><div class="wrap"><div class="arte"><div class="art-i"><svg viewBox="0 0 120 90" role="img" aria-label="Cinco estrelas"><g transform="translate(16 48)"><path class="st" style="--k:0" d="M0-9 2.6-3.1 9-2.8 4.1 1.3 5.6 7.3 0 4-5.6 7.3-4.1 1.3-9-2.8-2.6-3.1Z"/></g><g transform="translate(36 36)"><path class="st" style="--k:1" d="M0-9 2.6-3.1 9-2.8 4.1 1.3 5.6 7.3 0 4-5.6 7.3-4.1 1.3-9-2.8-2.6-3.1Z"/></g><g transform="translate(60 31)"><path class="st" style="--k:2" d="M0-9 2.6-3.1 9-2.8 4.1 1.3 5.6 7.3 0 4-5.6 7.3-4.1 1.3-9-2.8-2.6-3.1Z"/></g><g transform="translate(84 36)"><path class="st" style="--k:3" d="M0-9 2.6-3.1 9-2.8 4.1 1.3 5.6 7.3 0 4-5.6 7.3-4.1 1.3-9-2.8-2.6-3.1Z"/></g><g transform="translate(104 48)"><path class="st" style="--k:4" d="M0-9 2.6-3.1 9-2.8 4.1 1.3 5.6 7.3 0 4-5.6 7.3-4.1 1.3-9-2.8-2.6-3.1Z"/></g><path class="tracejado" d="M14 68c12-6 18 6 30 0s18 6 30 0 18 6 30 0"/></svg><b class="n"><span data-n="4.9" data-d="1">4,9</span> <em>★</em></b><span>Avaliação no Google</span></div><div class="art-i"><svg viewBox="0 0 120 90" role="img" aria-label="Lancha cruzando entre dois trapiches"><circle class="ln" cx="60" cy="24" r="12"/><rect class="ln" x="56" y="7" width="8" height="4" rx="1.5"/><path class="ln s ponteiro" d="M60 24V15"/><path class="ln" d="M8 70V58M8 62h12M112 70V58M112 62h-12"/><g class="barco"><g transform="translate(15 52)"><path d="M0 8h18l-4 7H4z" fill="#132238"/><path d="M9 -8l7 14H2z" fill="#D95338"/></g></g><svg x="0" y="68" width="120" height="14" viewBox="0 0 120 14" overflow="hidden"><g class="mar-faixa"><path class="tracejado" style="stroke-dasharray:none;stroke:#1E8FA3" d="M0 7q10-7 20 0t20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0"/></g></svg></svg><b class="n"><span data-n="12" data-d="0">12</span> min</b><span>Travessia rápida</span></div><div class="art-i"><svg viewBox="0 0 120 90" role="img" aria-label="Boia salva-vidas"><g class="boia"><circle cx="60" cy="42" r="21" fill="none" stroke="#EBE5D8" stroke-width="15"/><circle cx="60" cy="42" r="21" fill="none" stroke="#D95338" stroke-width="15" stroke-dasharray="16.5 16.5" transform="rotate(-90 60 42)"/><circle class="ln" cx="60" cy="42" r="28.5" stroke-dasharray="3 5" stroke-width="1.6"/></g><svg x="0" y="70" width="120" height="14" viewBox="0 0 120 14" overflow="hidden"><g class="mar-faixa"><path class="tracejado" style="stroke-dasharray:none;stroke:#1E8FA3" d="M0 7q10-7 20 0t20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0"/></g></svg></svg><b class="n">Zero fila</b><span>Saída no seu horário</span></div><div class="art-i"><svg viewBox="0 0 120 90" role="img" aria-label="Selo de embarcação credenciada"><g class="carimbo"><circle class="ln s selo-aro" cx="60" cy="44" r="34" stroke-dasharray="4 5"/><circle class="ln s" cx="60" cy="44" r="28"/><circle class="ln s" cx="60" cy="27" r="4"/><path class="ln s" d="M60 31v32M51 38h18M40 52c2 12 12 16 20 16s18-4 20-16M40 52l-5 3M40 52l1 -6M80 52l5 3M80 52l-1-6"/></g></svg><b class="n"><span data-n="100" data-d="0">100</span>%</b><span>Credenciado Marinha</span></div></div></div></section>
 
     <section class="section">
       <div class="wrap">
         <!-- Painel Interativo de Travessias (Live Thing) -->
         <div class="ferry-board" aria-label="Simulador rápido de tempo de travessia">
           <div class="ferry-head">
-            <strong>Tempo estimado de travessia de lancha</strong>
-            <span class="ferry-badge">Operando hoje · Trapiche Nova Brasília</span>
+            <strong>Tempo estimado de travessia</strong>
+            <span class="ferry-badge">Base · Trapiche Nova Brasília</span>
           </div>
           <div class="ferry-tabs" id="ferryTabs">
-            <button type="button" class="f-tab active" data-time="12 a 15 min" data-route="Pontal do Sul ↔ Nova Brasília" data-desc="Saída direta sem aguardar lotação de barca, desembarcando no trapiche de Nova Brasília ou Fortaleza.">Pontal do Sul ↔ Brasília</button>
-            <button type="button" class="f-tab" data-time="8 a 10 min" data-route="Nova Brasília ↔ Encantadas" data-desc="Ligação rápida por mar entre as duas vilas principais da Ilha do Mel (Farol das Conchas e Gruta).">Brasília ↔ Encantadas</button>
-            <button type="button" class="f-tab" data-time="35 a 45 min" data-route="Paranaguá ↔ Ilha do Mel" data-desc="Travessia panorâmica cortando a Baía de Paranaguá direto até a pousada ou trapiche escolhido.">Paranaguá ↔ Ilha do Mel</button>
-            <button type="button" class="f-tab" data-time="2h30 a 3h30" data-route="Volta na Ilha do Mel 360°" data-desc="Roteiro turístico completo: Baía dos Golfinhos, Fortaleza, Farol das Conchas e Gruta das Encantadas.">Volta na Ilha 360°</button>
+            <button type="button" class="f-tab active" data-time="12 a 15 min" data-route="Pontal do Sul ↔ Nova Brasília" data-desc="Saída direta, sem esperar lotação de barca.">Pontal do Sul ↔ Brasília</button>
+            <button type="button" class="f-tab" data-time="8 a 10 min" data-route="Nova Brasília ↔ Encantadas" data-desc="Ligação rápida entre as duas vilas da ilha.">Brasília ↔ Encantadas</button>
+            <button type="button" class="f-tab" data-time="35 a 45 min" data-route="Paranaguá ↔ Ilha do Mel" data-desc="Pela Baía de Paranaguá até o trapiche escolhido.">Paranaguá ↔ Ilha do Mel</button>
+            <button type="button" class="f-tab" data-time="2h30 a 3h30" data-route="Volta na Ilha do Mel 360°" data-desc="Baía dos Golfinhos, Fortaleza, Farol das Conchas e Gruta.">Volta na Ilha 360°</button>
           </div>
+          <div class="carta" id="carta"><svg viewBox="0 0 360 230" role="img" aria-label="Mapa ilustrado da travessia selecionada"><path class="ondas" d="M8 210q9-6 18 0t18 0 18 0 18 0"/><path class="ondas" d="M90 222q9-6 18 0t18 0 18 0 18 0"/><path class="ondas" d="M300 12q9-6 18 0t18 0 18 0 18 0"/><path class="ondas" d="M110 10q9-6 18 0t18 0 18 0 18 0"/><path class="ondas" d="M200 14q9-6 18 0t18 0 18 0 18 0"/><path class="ondas" d="M310 220q9-6 18 0t18 0 18 0 18 0"/><path class="ondas" d="M20 125q9-6 18 0t18 0 18 0 18 0"/><path class="terra" d="M0 0H72C66 28 74 52 64 80C56 108 70 132 62 156C56 176 44 200 36 230H0Z"/><path class="ilha" d="M168 96C185 62 230 42 280 42C335 46 338 100 308 148C290 176 268 192 244 188C216 184 200 150 186 128C174 116 164 104 168 96Z"/><path class="fantasma" d="M48 184C95 178 140 150 170 104"/><path class="fantasma" d="M170 104C160 150 190 200 244 197"/><path class="fantasma" d="M70 38C100 40 150 70 170 104"/><path class="fantasma" d="M170 104C160 60 215 24 285 28C355 34 356 110 318 154C298 186 274 210 244 198C205 190 172 160 170 104"/><path class="rota" id="rtAct" d=""/><circle class="no" cx="70" cy="38" r="6"/><circle class="no" cx="48" cy="184" r="6"/><circle class="no" cx="170" cy="104" r="6"/><circle class="no" cx="244" cy="197" r="6"/><text class="lb" x="82" y="28">Paranaguá</text><text class="lb" x="58" y="212">Pontal do Sul</text><text class="lb d" x="182" y="100">Nova Brasília</text><text class="lb i" x="248" y="128">Ilha do Mel</text><text class="lb" x="244" y="219" text-anchor="middle">Encantadas</text><g id="rtBoat"><path d="M-9 1h18l-4 7h-10z" fill="#fff"/><path d="M0-11l7 11h-14z" fill="#D95338"/></g></svg><p class="nota">Ilustração sem escala</p></div>
           <div class="ferry-info">
             <div><small>Trecho selecionado</small><b id="fRoute">Pontal do Sul ↔ Nova Brasília</b></div>
             <div><small>Tempo de navegação</small><b id="fTime">12 a 15 min</b></div>
-            <p id="fDesc">Saída direta sem aguardar lotação de barca, desembarcando no trapiche de Nova Brasília ou Fortaleza.</p>
+            <p id="fDesc">Saída direta, sem esperar lotação de barca.</p>
           </div>
         </div>
 
@@ -524,13 +593,13 @@
             </picture>
           </div>
           <div class="host-copy">
-            <span class="eyebrow">Cooperativa Náutica · Nova Brasília</span>
-            <h2>Navegação segura com o <span class="serif">Táxi Náutico Luiza e Analy.</span></h2>
-            <p>Com base em Nova Brasília na Ilha do Mel, operamos a embarcação Luiza e Analy IV levando passageiros, famílias e bagagens com rapidez, coletes homologados e marinheiros nativos da baía.</p>
+            <span class="eyebrow">Base · Nova Brasília</span>
+            <h2 class="split">Navegue com a <span class="serif">Luiza e Analy.</span></h2>
+            <p class="rv">Base em Nova Brasília. A lancha Luiza e Analy IV leva famílias e bagagens entre os trapiches da baía.</p>
             <ul class="ticks">
-              <li>Saídas no horário que você combina pelo WhatsApp</li>
-              <li>Desembarque próximo à sua pousada (Brasília, Fortaleza ou Encantadas)</li>
-              <li>Passeios privativos para ver os botos na Baía dos Golfinhos</li>
+              <li>Saída no horário combinado</li>
+              <li>Desembarque perto da sua pousada</li>
+              <li>Passeio privativo na Baía dos Golfinhos</li>
             </ul>
             <a href="https://wa.me/5541997621767?text=Ol%C3%A1!%20Vi%20o%20site%20do%20T%C3%A1xi%20N%C3%A1utico%20Luiza%20e%20Analy%20e%20quero%20combinar%20uma%20travessia%20ou%20passeio." target="_blank" rel="noopener" class="btn" data-mag><span>Falar no WhatsApp</span><i>→</i></a>
           </div>
@@ -538,12 +607,13 @@
       </div>
     </section>
 
+    <div class="onda" style="background:var(--sand);color:var(--sand-2)" aria-hidden="true"><svg viewBox="0 0 2400 60" preserveAspectRatio="none" opacity=".45"><use href="#wb"/></svg><svg viewBox="0 0 2400 60" preserveAspectRatio="none"><use href="#wf"/></svg></div>
     <section class="section alt" id="travessias">
       <div class="wrap">
         <div class="sec-head">
           <span class="eyebrow">Nossos Serviços no Mar</span>
-          <h2 class="sec-title">Travessia rápida ou passeio <span class="serif">completo na ilha.</span></h2>
-          <p class="sec-sub">Atendimento diário para moradores, turistas e hóspedes das pousadas da Ilha do Mel.</p>
+          <h2 class="sec-title split">Travessia rápida ou <span class="serif">passeio na ilha.</span></h2>
+          <p class="sec-sub">Para moradores, turistas e hóspedes da Ilha do Mel.</p>
         </div>
         <div class="cards">
           <article class="card">
@@ -556,7 +626,7 @@
             </div>
             <div class="card-body">
               <h3>Táxi Náutico Sob Demanda</h3>
-              <p>Pontal do Sul ou Paranaguá direto para Nova Brasília, Praia da Fortaleza ou Encantadas sem fila.</p>
+              <p>Do continente direto para Nova Brasília, Fortaleza ou Encantadas.</p>
               <a href="https://wa.me/5541997621767?text=Ol%C3%A1!%20Quero%20agendar%20um%20*T%C3%A1xi%20N%C3%A1utico*%20com%20a%20lancha%20Luiza%20e%20Analy." target="_blank" rel="noopener" class="btn-line">Chamar Táxi Náutico <span aria-hidden="true">→</span></a>
             </div>
           </article>
@@ -570,7 +640,7 @@
             </div>
             <div class="card-body">
               <h3>Volta na Ilha &amp; Golfinhos</h3>
-              <p>Passeio privativo passando pela Baía dos Golfinhos, Fortaleza, Farol das Conchas e Gruta.</p>
+              <p>Baía dos Golfinhos, Fortaleza, Farol das Conchas e Gruta.</p>
               <a href="https://wa.me/5541997621767?text=Ol%C3%A1!%20Quero%20consultar%20o%20passeio%20*Volta%20na%20Ilha%20e%20Ba%C3%ADa%20dos%20Golfinhos*%20com%20a%20Luiza%20e%20Analy." target="_blank" rel="noopener" class="btn-line">Consultar Passeio <span aria-hidden="true">→</span></a>
             </div>
           </article>
@@ -584,7 +654,7 @@
             </div>
             <div class="card-body">
               <h3>Translado Brasília ↔ Encantadas</h3>
-              <p>Vai jantar, visitar a Gruta ou trocar de pousada? Fazemos a travessia rápida entre as praias.</p>
+              <p>Jantar, Gruta ou troca de pousada: travessia rápida entre as praias.</p>
               <a href="https://wa.me/5541997621767?text=Ol%C3%A1!%20Preciso%20de%20translado%20entre%20*Nova%20Bras%C3%ADlia%20e%20Encantadas*%20com%20o%20T%C3%A1xi%20N%C3%A1utico%20Luiza%20e%20Analy." target="_blank" rel="noopener" class="btn-line">Agendar Translado <span aria-hidden="true">→</span></a>
             </div>
           </article>
@@ -592,12 +662,13 @@
       </div>
     </section>
 
+    <div class="onda" style="background:var(--sand-2);color:var(--sand)" aria-hidden="true"><svg viewBox="0 0 2400 60" preserveAspectRatio="none" opacity=".45"><use href="#wb"/></svg><svg viewBox="0 0 2400 60" preserveAspectRatio="none"><use href="#wf"/></svg></div>
     <section class="section" id="roteiros">
       <div class="wrap">
         <div class="sec-head">
           <span class="eyebrow">Destinos na Baía de Paranaguá</span>
-          <h2 class="sec-title">A Ilha do Mel de ponta <span class="serif">a ponta.</span></h2>
-          <p class="sec-sub">Embarque no trapiche de Nova Brasília e conheça as maravilhas do litoral paranaense.</p>
+          <h2 class="sec-title split">A Ilha do Mel de ponta <span class="serif">a ponta.</span></h2>
+          <p class="sec-sub">Embarque no trapiche de Nova Brasília.</p>
         </div>
         <div class="routes" id="routes">
           <article class="route">
@@ -607,7 +678,7 @@
                 <img src="img/farol-das-conchas-luiza.jpg" alt="Farol das Conchas em Nova Brasília na Ilha do Mel" width="1800" height="1200" loading="lazy" decoding="async">
               </picture>
             </div>
-            <div><small>Nova Brasília</small><h3>Trapiche de Brasília &amp; Farol das Conchas</h3><p>Nosso ponto base na ilha, aos pés do histórico Farol das Conchas e das praias do Istmo.</p></div>
+            <div><small>Nova Brasília</small><h3>Trapiche de Brasília &amp; Farol das Conchas</h3><p>Nosso ponto base, aos pés do Farol das Conchas.</p></div>
           </article>
           <article class="route">
             <div class="photo">
@@ -616,7 +687,7 @@
                 <img src="img/fortaleza-paranagua.jpg" alt="Fortaleza Nossa Senhora dos Prazeres na Ilha do Mel" width="1800" height="1200" loading="lazy" decoding="async">
               </picture>
             </div>
-            <div><small>História &amp; Praia</small><h3>Fortaleza N. Sra. dos Prazeres</h3><p>Desembarque direto na Praia da Fortaleza para visitar os canhões do século XVIII sem caminhada longa.</p></div>
+            <div><small>História &amp; Praia</small><h3>Fortaleza N. Sra. dos Prazeres</h3><p>Desembarque direto na Praia da Fortaleza.</p></div>
           </article>
           <article class="route">
             <div class="photo">
@@ -625,7 +696,7 @@
                 <img src="img/gruta-encantadas-luiza.jpg" alt="Morro e Gruta das Encantadas no sul da Ilha do Mel" width="1800" height="875" loading="lazy" decoding="async">
               </picture>
             </div>
-            <div><small>Sul da Ilha</small><h3>Praia &amp; Gruta das Encantadas</h3><p>Travessia rápida para conhecer a Gruta das Encantadas e os restaurantes à beira-mar.</p></div>
+            <div><small>Sul da Ilha</small><h3>Praia &amp; Gruta das Encantadas</h3><p>Gruta das Encantadas e restaurantes à beira-mar.</p></div>
           </article>
           <article class="route">
             <div class="photo">
@@ -634,20 +705,21 @@
                 <img src="img/baia-dos-golfinhos-luiza.jpg" alt="Baía dos Golfinhos e Ilha das Peças em Paranaguá" width="1800" height="1012" loading="lazy" decoding="async">
               </picture>
             </div>
-            <div><small>Vida Marinha</small><h3>Baía dos Golfinhos &amp; Ilha das Peças</h3><p>Parada especial nas águas calmas da baía para observar os botos-cinza nadando livres.</p></div>
+            <div><small>Vida Marinha</small><h3>Baía dos Golfinhos &amp; Ilha das Peças</h3><p>Parada na baía para ver os botos-cinza.</p></div>
           </article>
         </div>
         <div class="routes-bar" aria-hidden="true"><i id="routesBar"></i></div>
-        <p class="swipe">Arraste para o lado para ver todos os destinos.</p>
+        <p class="swipe">Arraste para ver os destinos.</p>
       </div>
     </section>
 
+    <div class="onda" style="background:var(--sand);color:var(--ink)" aria-hidden="true"><svg viewBox="0 0 2400 60" preserveAspectRatio="none" opacity=".45"><use href="#wb"/></svg><svg viewBox="0 0 2400 60" preserveAspectRatio="none"><use href="#wf"/></svg></div>
     <section class="section deep" id="reservar">
       <div class="wrap">
         <div class="sec-head">
           <span class="eyebrow">Atendimento Direto no Barco</span>
-          <h2 class="sec-title">Monte sua travessia ou passeio <span class="serif">no WhatsApp.</span></h2>
-          <p class="sec-sub">Selecione o serviço abaixo e envie sua solicitação direto para o Táxi Náutico Luiza e Analy.</p>
+          <h2 class="sec-title split">Monte seu pedido <span class="serif">no WhatsApp.</span></h2>
+          <p class="sec-sub">Escolha e envie direto para a Luiza e Analy.</p>
         </div>
         <div class="planner">
           <div class="group">
@@ -690,28 +762,25 @@
       </div>
     </section>
 
+    <div class="onda" style="background:var(--ink);color:var(--sand-2)" aria-hidden="true"><svg viewBox="0 0 2400 60" preserveAspectRatio="none" opacity=".45"><use href="#wb"/></svg><svg viewBox="0 0 2400 60" preserveAspectRatio="none"><use href="#wf"/></svg></div>
     <section class="section alt" id="avaliacoes">
       <div class="wrap">
         <div class="sec-head">
-          <span class="eyebrow">Segurança &amp; Pontualidade</span>
-          <h2 class="sec-title">Quem já navegou com a <span class="serif">Luiza e Analy.</span></h2>
+          <span class="eyebrow">Avaliações</span>
+          <h2 class="sec-title split">Nota no <span class="serif">Google.</span></h2>
         </div>
-        <div class="score"><strong>4,9</strong><div><b>★★★★★</b><small>Clientes atendidos na Ilha do Mel e Paranaguá</small></div></div>
-        <div class="reviews">
-          <article class="review"><div><div class="stars" aria-label="5 estrelas">★★★★★</div><p>"Salvou nossa chegada em Nova Brasília! Chegamos tarde em Pontal do Sul e a lancha Luiza e Analy nos levou super rápido e com total segurança."</p></div><cite>Gustavo Henrique<small>Travessia Rápida · Google</small></cite></article>
-          <article class="review"><div><div class="stars" aria-label="5 estrelas">★★★★★</div><p>"Fizemos o passeio pela Baía dos Golfinhos e Fortaleza com a família toda. Barco muito bem cuidado, marinheiro experiente e preço justo."</p></div><cite>Patrícia &amp; Família<small>Passeio na Ilha · Google</small></cite></article>
-          <article class="review"><div><div class="stars" aria-label="5 estrelas">★★★★★</div><p>"Super pontuais! Combinamos o horário de volta pelo WhatsApp para não pegar fila na barca e estavam no trapiche de Brasília na hora exata."</p></div><cite>Rodrigo Martins<small>Táxi Náutico · Google</small></cite></article>
-        </div>
+        <div class="selo rv"><div class="selo-top"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg><div><strong>4,9</strong><b>★★★★★</b><small>34 avaliações no Google</small></div></div><a href="https://www.google.com/maps/place/?q=place_id:ChIJL3dVqHS725QRG9Ya3nNrj3s" target="_blank" rel="noopener" class="btn-line">Ver no Google Maps <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
 
+    <div class="onda" style="background:var(--sand-2);color:var(--sand)" aria-hidden="true"><svg viewBox="0 0 2400 60" preserveAspectRatio="none" opacity=".45"><use href="#wb"/></svg><svg viewBox="0 0 2400 60" preserveAspectRatio="none"><use href="#wf"/></svg></div>
     <section class="section" id="embarque">
       <div class="wrap">
         <div class="where">
           <div class="where-card">
             <div>
               <span class="eyebrow">Base de Embarque</span>
-              <h2>Nova Brasília, Ilha do Mel e <span class="serif">Paranaguá.</span></h2>
+              <h2 class="split">Nova Brasília, Ilha do Mel e <span class="serif">Paranaguá.</span></h2>
             </div>
             <ul class="facts">
               <li><small>Ponto principal</small><b>Trapiche de Nova Brasília — Ilha do Mel, Paranaguá - PR (CEP 83251-000)</b></li>
@@ -725,9 +794,9 @@
           </div>
         </div>
         <div class="faq">
-          <details open><summary>Qual a vantagem do Táxi Náutico para a barca comum?</summary><p>No Táxi Náutico Luiza e Analy você não enfrenta fila de espera e sai no horário combinado, indo direto para Nova Brasília, Praia da Fortaleza ou Encantadas em metade do tempo.</p></details>
-          <details><summary>Vocês buscam em Pontal do Sul e Paranaguá?</summary><p>Sim! Fazemos tanto o embarque nos trapiches da Ilha do Mel quanto buscas agendadas no continente (Pontal do Sul e Paranaguá).</p></details>
-          <details><summary>Posso levar malas e equipamentos de praia?</summary><p>Sim, nossa lancha tem espaço seguro e protegido para transportar suas malas, pranchas e compras até o trapiche mais próximo da sua pousada.</p></details>
+          <details open><summary>Qual a vantagem sobre a barca de linha?</summary><p>Você sai no horário combinado, direto para o trapiche mais perto da pousada.</p></details>
+          <details><summary>Vocês buscam em Pontal do Sul e Paranaguá?</summary><p>Sim, embarcamos em Pontal do Sul, Paranaguá e nos trapiches da ilha. Combine pelo WhatsApp.</p></details>
+          <details><summary>Posso levar malas e equipamentos de praia?</summary><p>Sim. Conte o que vai levar pelo WhatsApp.</p></details>
         </div>
       </div>
     </section>
@@ -741,7 +810,7 @@
       </div>
       <div class="wrap">
         <span class="eyebrow">Ilha do Mel Sem Fila</span>
-        <h2>Sua lancha pronta no trapiche <span class="serif">quando você precisar.</span></h2>
+        <h2 class="split">Sua lancha no trapiche <span class="serif">quando precisar.</span></h2>
         <a href="#reservar" class="btn sun" data-mag><span>Chamar lancha agora</span><i>→</i></a>
       </div>
     </section>
@@ -810,6 +879,61 @@
         });
       });
       atualizar();
+
+      // entrada dos elementos (títulos palavra por palavra, arte da faixa, selo) + contadores
+      var calmo = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function contar(el) {
+        var to = parseFloat(el.dataset.n), d = +el.dataset.d || 0, t0 = null;
+        function fmt(v) { return v.toFixed(d).replace('.', ','); }
+        if (calmo) { el.textContent = fmt(to); return; }
+        function f(t) {
+          if (t0 === null) t0 = t;
+          var p = Math.min(1, (t - t0) / 1400);
+          el.textContent = fmt(to * (1 - Math.pow(1 - p, 3)));
+          if (p < 1) requestAnimationFrame(f);
+        }
+        requestAnimationFrame(f);
+      }
+      var eio = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('in'); eio.unobserve(e.target);
+          e.target.querySelectorAll('[data-n]').forEach(contar);
+        });
+      }, { threshold: 0.25, rootMargin: '0px 0px -6% 0px' });
+      document.querySelectorAll('.split:not(h1), .art-i, .rv').forEach(function (el) { eio.observe(el); });
+
+      // carta da travessia: a rota se desenha e a lancha navega no trecho escolhido
+      (function () {
+        var act = document.getElementById('rtAct'), boat = document.getElementById('rtBoat'), carta = document.getElementById('carta');
+        var D = ['M48 184C95 178 140 150 170 104', 'M170 104C160 150 190 200 244 197', 'M70 38C100 40 150 70 170 104', 'M170 104C160 60 215 24 285 28C355 34 356 110 318 154C298 186 274 210 244 198C205 190 172 160 170 104'];
+        var cur = 0, len = 0, t0 = 0, raf = 0, vis = false;
+        function pos(p, dir) {
+          var a = act.getPointAtLength(p * len), b = act.getPointAtLength(Math.max(0, Math.min(len, p * len + dir * 2)));
+          boat.setAttribute('transform', 'translate(' + a.x.toFixed(1) + ' ' + (a.y - 4).toFixed(1) + ') scale(' + (b.x >= a.x ? 1 : -1) + ' 1)');
+        }
+        function frame(now) {
+          var e = now - t0, draw = Math.min(1, e / 1600), p, dir = 1;
+          act.style.strokeDashoffset = len * (1 - draw);
+          if (e < 1600) p = 1 - Math.pow(1 - draw, 3);
+          else if (cur === 3) p = ((e - 1600) / 11000) % 1;
+          else { var k = ((e - 1600) / 5200) % 2; p = (1 + Math.cos(Math.PI * k)) / 2; dir = k < 1 ? -1 : 1; }
+          pos(p, dir);
+          raf = vis ? requestAnimationFrame(frame) : 0;
+        }
+        function set(i) {
+          cur = i; act.setAttribute('d', D[i]); len = act.getTotalLength();
+          act.style.strokeDasharray = len; act.style.strokeDashoffset = calmo ? 0 : len;
+          if (calmo) { pos(1, 1); return; }
+          t0 = performance.now(); if (vis && !raf) raf = requestAnimationFrame(frame);
+        }
+        document.querySelectorAll('#ferryTabs .f-tab').forEach(function (tab, i) { tab.addEventListener('click', function () { set(i); }); });
+        set(0);
+        new IntersectionObserver(function (es) {
+          vis = es[0].isIntersecting;
+          if (vis && !calmo && !raf) { t0 = performance.now() - 1600 * 0; raf = requestAnimationFrame(frame); }
+        }, { threshold: 0.2 }).observe(carta);
+      })();
 
       var routes = document.getElementById('routes'), bar = document.getElementById('routesBar');
       routes.addEventListener('scroll', function () {
